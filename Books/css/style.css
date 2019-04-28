@@ -1,0 +1,120 @@
+body{
+	text-align: center;
+	background: linear-gradient(to bottom, #FFDBD5,#FE69BD);
+	margin:20px;
+}
+.title{
+	text-align: center;
+	color: black;
+}
+.header{
+	padding: 20px;
+	margin-bottom: 10px;
+	background: linear-gradient(#FF5B94,#B441A4);
+	font-family: Algerian;
+	font-size: 20px;
+	border: white 3px solid;
+}
+.menu {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 30px;
+	padding: 0
+	text-align:center;
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+.menu .button {
+	padding: 20px;
+    color: black;
+	font-family: Bernard MT Condensed;
+	font-size: 18px;
+    text-align: center;
+    list-style: none;
+	background: linear-gradient(#FF5B94,#B441A4);
+	border: white 3px solid;
+}
+.logo{
+	float: left;
+}
+.button:hover{
+	background: white;
+	color: black;
+}
+.slideshow{
+	position: relative;
+	height: 180vh;
+	width: 90vw;
+	border: white 3px solid;
+	margin: 150px auto;
+}
+.slide{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+}
+.one{
+	background-image: url(../images/one.jpeg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	animation: disolveRound 20s linear infinite 5s;
+}
+.two{
+	background-image: url(../images/two.jpeg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	animation: disolveRound 20s linear infinite 10s;
+}
+.three{
+	background-image: url(../images/three.jpeg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	animation: disolveRound 20s linear infinite 15s;
+}
+.four{
+	background-image: url(../images/four.jpeg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	animation: disolveRound 20s linear infinite 20s;
+}
+@keyframes disolveRound{
+	0% {
+		opacity: 0;
+	}
+	5% {
+		opacity:1;
+	}
+	25% {
+		opacity:1;
+	}
+	35%{
+		opacity:1;
+	}
+	40%{
+		opacity:0;
+	}
+}
+.RecommendBooks{
+	grid-template-columns: 1fr 2fr;
+	grid-gap: 20px;
+	display: grid;
+}
+.c{
+	background: linear-gradient(to right, #7117EA,#EA6060);
+	font-family: Kristen;
+	font-size:19px;
+	border: white 3px solid;
+}
+.Top10Favorites{
+	background:linear-gradient(to right, #EA6060,#7117EA);
+	font-family: Kristen;
+	font-size: 19px;
+	border: white 3px solid;
+}
